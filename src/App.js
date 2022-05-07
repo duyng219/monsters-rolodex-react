@@ -22,7 +22,7 @@ class App extends Component {
       .then((users) => this.setState({ monsters: users }));
   }
 
-  hanldeChange(e) {
+  hanldeChange = (e) => {
     this.setState({ searchField: e.target.value})
   }
 
@@ -33,6 +33,7 @@ class App extends Component {
       )
     return (
       <div className="App">
+      <h1>Monsters Rodolex</h1>
         <SearchBox
           placeholder="Search monsters"
           hanldeChange={this.hanldeChange}
